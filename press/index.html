@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Inner Weather · Press</title>
+<meta name="description" content="Inner Weather (心象檔案): a quiet game in 100 pages that opens into a two-page picture book on iPhone Duo." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Noto+Serif+TC:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root { --ink: #2b2f36; --faint: rgba(43, 47, 54, 0.55); --paper: #bccad0; --sheet: #c7d3d8; --line: rgba(43, 47, 54, 0.22);
+    --mono: "Courier Prime", ui-monospace, Menlo, monospace; --serif: "Noto Serif TC", Georgia, serif; }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--serif); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  .mono { font-family: var(--mono); letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; }
+  header { padding: 48px 0 28px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  header .obs { font-weight: 700; letter-spacing: 0.16em; }
+  header .read { text-align: right; color: var(--faint); line-height: 1.6; }
+  h1 { font-family: var(--mono); font-weight: 400; letter-spacing: 0.1em; font-size: clamp(30px, 6vw, 54px); line-height: 1.1; margin: 8px 0 6px; }
+  .brand { font-size: clamp(18px, 3vw, 24px); letter-spacing: 0.4em; margin: 0 0 18px; }
+  .tag { font-size: clamp(18px, 2.6vw, 24px); max-width: 30em; margin: 0 0 28px; }
+  figure { margin: 0; }
+  video, .shot img { width: 100%; height: auto; display: block; background: var(--sheet); box-shadow: 0 18px 50px rgba(40, 55, 65, 0.22); border-radius: 18px; }
+  figcaption { color: var(--faint); font-size: 14px; margin-top: 10px; }
+  section { padding: 56px 0 8px; border-top: 1px solid var(--line); margin-top: 56px; }
+  h2 { font-family: var(--mono); font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: 15px; margin: 0 0 22px; }
+  .lead { font-size: 18px; max-width: 40em; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  .points { display: grid; gap: 30px; }
+  .point { display: grid; grid-template-columns: 1.35fr 1fr; gap: 26px; align-items: center; }
+  .point h3 { font-family: var(--mono); font-weight: 400; letter-spacing: 0.08em; font-size: 15px; text-transform: uppercase; margin: 0 0 8px; }
+  .point p { margin: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+  .grid.closed { grid-template-columns: repeat(auto-fill, minmax(150px, 220px)); }
+  .shot a { display: block; }
+  .shot img { border-radius: 12px; }
+  .lang { display: inline-flex; gap: 4px; margin: 0 0 18px; }
+  .lang button { font: inherit; font-family: var(--mono); letter-spacing: 0.1em; background: none; border: 1px solid var(--ink); color: var(--ink); padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--ink); color: #eef2f3; }
+  dl { display: grid; grid-template-columns: 11em 1fr; gap: 10px 22px; margin: 0; }
+  dt { font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; color: var(--faint); padding-top: 3px; }
+  dd { margin: 0; }
+  a { color: inherit; text-underline-offset: 4px; }
+  .zh { color: var(--faint); }
+  footer { padding: 56px 0 72px; color: var(--faint); }
+  @media (max-width: 760px) {
+    .two, .point { grid-template-columns: 1fr; }
+    dl { grid-template-columns: 1fr; gap: 2px; } dd { margin-bottom: 12px; }
+    header .read { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mono"><div class="obs">OBS. 000</div><div>PRESS KIT · 媒體資料</div></div>
+    <div class="mono read">1013 hPa<br>CALM<br>VIS 20 KM</div>
+  </header>
+
+  <h1>INNER<br>WEATHER</h1>
+  <p class="brand">心 象 檔 案</p>
+  <p class="tag">A quiet game in 100 pages that opens into a two-page picture book on iPhone Duo.</p>
+
+  <figure>
+    <video controls playsinline preload="metadata" poster="media/duo-film-poster.jpg">
+      <source src="media/inner-weather-duo-en.mp4" type="video/mp4" />
+    </video>
+    <figcaption>Recorded in the app at iPhone Duo's open display size (951 × 669 pt). 27 s, sound on. <span class="zh">· 以 iPhone Duo 內螢幕尺寸錄製 · <a href="media/inner-weather-duo-zh-Hant.mp4">繁體中文版</a></span></figcaption>
+  </figure>
+
+  <section>
+    <h2>The game</h2>
+    <p class="lead">Inner Weather is an observation log of the weather inside you. Each page is a small risograph-style illustration you play with one finger — gathering scattered light, breathing with a circle, keeping a shadow company — and when it is done, a short poem is typed onto the page. A hundred pages in ten seasons, from waking to whole.</p>
+    <p class="zh">心象檔案是一百頁的安靜遊戲，一本觀測自己內心天氣的紀錄。每一頁是一幅 riso 風格的小插畫，用一根手指就能玩；完成後，一首短詩會被打在頁面上。十個季節，從醒來到完整。</p>
+  </section>
+
+  <section>
+    <h2>On iPhone Duo</h2>
+    <div class="points">
+      <div class="point">
+        <figure class="shot"><img src="media/duo-open-2-poem-en-thumb.jpg" alt="A two-page spread: the page's title and poem on the left, an island on the right." loading="lazy" /></figure>
+        <div><h3>A spread, with the hinge as its spine</h3><p>At the open display's 1.42 : 1 shape the game lays out as two facing pages — words on the left, the picture on the right — with the spine exactly on the hinge. The illustration leans over the fold and dissolves into the paper, dot by dot.</p></div>
+      </div>
+      <div class="point">
+        <figure class="shot"><img src="media/duo-open-4-turn-en-thumb.jpg" alt="A page curling over the spine mid-turn." loading="lazy" /></figure>
+        <div><h3>Turn the page by hand</h3><p>Swipe and the page lifts and curls over in a soft paper turn. Under it, the next page waits as a faint print of its season until it inks in.</p></div>
+      </div>
+      <div class="point">
+        <figure class="shot"><img src="media/duo-open-5-still-en-thumb.jpg" alt="An earlier page kept still, with a notebook in the corner." loading="lazy" /></figure>
+        <div><h3>A book of your own year</h3><p>Pages you have written stay in the book, still and with their poems, so you can leaf back through them — and play one again if you like. The next page stays blank until you get there.</p></div>
+      </div>
+      <div class="point">
+        <figure class="shot"><img src="media/duo-closed-1-title-en-thumb.jpg" alt="The game on the outer display, one page at a time." loading="lazy" style="max-width: 260px; margin: 0 auto;" /></figure>
+        <div><h3>Closed, one page at a time</h3><p>Fold the phone and the same page carries on on the outer display. The layout follows the device live as it opens, closes and rotates. The spread also appears on iPad and on iPhone in landscape.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stills">
+    <h2>Stills</h2>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" data-l="zh-Hant" aria-pressed="false">繁中</button>
+    </div>
+    <p class="mono" style="color: var(--faint)">Open display · 2853 × 2007</p>
+    <div class="grid" data-set="open"></div>
+    <p class="mono" style="color: var(--faint); margin-top: 28px">Closed display · 1398 × 2034</p>
+    <div class="grid closed" data-set="closed"></div>
+  </section>
+
+  <section>
+    <h2>Facts</h2>
+    <dl>
+      <dt>Title</dt><dd>Inner Weather · 心象檔案</dd>
+      <dt>Platforms</dt><dd>iPhone (including iPhone Duo), iPad</dd>
+      <dt>Release</dt><dd>October 2026</dd>
+      <dt>Price</dt><dd>One purchase. No ads, no in-app purchases.</dd>
+      <dt>Privacy</dt><dd>No account, no tracking. Reflections are kept only on the device (App Privacy: Data Not Collected).</dd>
+      <dt>Languages</dt><dd>Traditional Chinese, Simplified Chinese, English, Japanese, Korean</dd>
+      <dt>Content</dt><dd>100 pages · 10 seasons · 12 ways to play · music for every chapter · 10 reflection questions</dd>
+      <dt>Play it now</dt><dd><a href="../">The first season, free in the browser</a></dd>
+      <dt>Contact</dt><dd><a href="mailto:smallseven@gmail.com">smallseven@gmail.com</a> · <a href="../support/">Support</a> · <a href="../privacy/">Privacy</a></dd>
+    </dl>
+  </section>
+
+  <footer class="mono">— THANK YOU FOR LOOKING.</footer>
+</div>
+<script>
+  const SHOTS = { open: ['duo-open-1-title', 'duo-open-2-poem', 'duo-open-3-play', 'duo-open-4-turn', 'duo-open-5-still'], closed: ['duo-closed-1-title', 'duo-closed-2-play'] };
+  function show(l) {
+    for (const g of document.querySelectorAll('.grid')) {
+      g.innerHTML = SHOTS[g.dataset.set].map((n) => `<figure class="shot"><a href="media/${n}-${l}.jpg" target="_blank" rel="noopener"><img src="media/${n}-${l}-thumb.jpg" alt="${n.replace(/-/g, ' ')}" loading="lazy" /></a></figure>`).join('');
+    }
+    for (const b of document.querySelectorAll('.lang button')) b.setAttribute('aria-pressed', String(b.dataset.l === l));
+  }
+  for (const b of document.querySelectorAll('.lang button')) b.addEventListener('click', () => show(b.dataset.l));
+  show('en');
+</script>
+</body>
+</html>
